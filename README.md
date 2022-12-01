@@ -1,41 +1,37 @@
-# My-Portfolio
+# Horiseon
 
-GIVEN I need to sample a potential employee's previous work
+The purpose of this project is to take all of the CSS and HTML knowledge that we have accumulated in the first month of bootcamp and put it to the test. This also gives us a great start in building our professional portfolio.
 
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them -- DONE
+## Description
 
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section --DONE
+![Website Screenshot](./assets/screenshot.png)
+This webpage was a challenge to construct due to the stacking of elements and my desire to make everything look good at all viewport sizes. But ultimately, I think I did a pretty good job.
+This portfolio webpage is entirely functional and gives anyone who shows up to it ways to contact me and learn a bit about me and my projects. There are also links directly to my deployed projects
+for the visitor's convenience.
 
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications --DONE
+## Getting Started
 
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others --DONE
+No prior setup is required to view this project.
 
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application --DONE
+### Dependencies
 
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport --DONE
+There are no special dependencies to view this project.
 
-Application deployed at live URL.
+### Installing
 
-Application loads with no errors.
+Just unzip and click on index.html or open it in your browser using this link: https://scicluna.github.io/My-Portfolio/
 
-Application GitHub URL submitted.
+### Executing program
 
-GitHub repository contains application code.
+Simply run it in your browser to view the website in all of its glory!
 
-Application resembles the mock-up functionality provided in the Challenge instructions.
+## Help
 
-Repository has a unique name.
+For further help in using this website, or in learning about html/css, please email me at sciclunajl@gmail.com for discussion.
 
-Repository follows best practices for file structure and naming conventions.
+## Authors
 
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains a quality readme with description, screenshot, link to deployed application.
+John Sciclcuna
+sciclunajl@gmail.com  
+https://github.com/scicluna/My-Portfolio/
+https://scicluna.github.io/My-Portfolio/
