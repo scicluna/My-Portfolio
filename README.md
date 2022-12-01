@@ -33,5 +33,5 @@ For further help in using this website, or in learning about html/css, please em
 
 John Sciclcuna
 sciclunajl@gmail.com  
-https://github.com/scicluna/My-Portfolio/
+https://github.com/scicluna/My-Portfolio/  
 https://scicluna.github.io/My-Portfolio/
