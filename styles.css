@@ -74,12 +74,18 @@ header nav li a {
 }
 
 .content{
-    display:flex;
+    display: inline-flex;
     flex-direction: row;
     width:100%;
     padding-top:30px;
     padding-bottom: 30px;
     color: var(--offwhite)
+}
+
+.content img {
+    display:inline-block;
+    height:auto;
+    width:30%;
 }
 
 .content h2, .worksection h2 {
@@ -102,12 +108,13 @@ header nav li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
+    color: var(--offwhite);
 }
 
 .content p{
     display: flex;
     flex-wrap: wrap;
-    width:70%;
+    width:40%;
     font-size:25px;
 }
 
@@ -118,12 +125,12 @@ header nav li a {
     width: 70%;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 2px;
+    background-color: var(--offwhite);
 }
 
 .work {
     height:300px;
-    background-color: rgba(255, 255, 255, 0.39);
     text-decoration: none;
 }
 
@@ -132,7 +139,7 @@ header nav li a {
     border: none;
     width: 100%;
     text-decoration: none;
-    color:var(--offwhite)
+    color:var(--offwhite);
 }
 
 .work:hover {
@@ -144,7 +151,7 @@ header nav li a {
     background-image: url(./assets/TTT.png);
     background-repeat: repeat;
     background-position: center;
-    background-size: 70%;
+    background-size: cover;
     display: flex;
     justify-content: right;
     align-items: flex-end;
@@ -160,15 +167,18 @@ header nav li a {
     align-items: flex-end;
 }
 
-.work:nth-child(2) h2,
+.work:nth-child(2) h2 {
+    color:var(--dark);
+}
+
 .work:nth-child(3) h2,
 .work:nth-child(4) h2,
 .work:nth-child(5) h2{
-    color: var(--dark);
+    color: var(--offwhite);
 }
 
 .work:nth-child(3){
-    background-image: url(./assets/underconstruction.jpg);
+    background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -177,7 +187,7 @@ header nav li a {
     align-items: flex-end;
 }
 .work:nth-child(4){
-    background-image: url(./assets/underconstruction.jpg);
+    background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -186,7 +196,7 @@ header nav li a {
     align-items: flex-end;
 }
 .work:nth-child(5){
-    background-image: url(./assets/underconstruction.jpg);
+    background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -199,4 +209,74 @@ header nav li a {
 
 .wide {
     grid-column: span 2;
+}
+
+@media screen and (max-width: 800px){
+    header h1,
+    .content h2,
+    .worksection h2 {
+        font-size: 25px;
+    }
+    header nav li,
+    .contacts a {
+        font-size: 20px;
+    }
+
+    #aboutme img{
+        display:none;
+    }
+    
+    #aboutme p {
+        width: 70%;
+    }
+    .splashart {
+        height:300px;
+    }
+
+    .work {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header h1,
+    .content h2,
+    .worksection h2 {
+        font-size: 18px;
+    }
+    header nav li,
+    .contacts a {
+        font-size: 10px;
+    }
+    #aboutme p {
+        font-size: 11px;
+    }
+    .splashart {
+        height:200px;
+    }
+    .work {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header h1,
+    .content h2,
+    .worksection h2 {
+        font-size: 12px;
+    }
+    header nav li,
+    .contacts a {
+        font-size: 7px;
+    }
+    #aboutme p {
+        font-size: 7px;
+    }
+    .splashart {
+        height:150px;
+    }
+    .work {
+        height: 150px;
+    }
+
 }

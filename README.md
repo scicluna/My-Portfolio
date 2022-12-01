@@ -18,7 +18,7 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application --DONE
 
 WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+THEN I am presented with a responsive layout that adapts to my viewport --DONE
 
 Application deployed at live URL.
 
