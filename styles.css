@@ -1,3 +1,4 @@
+/*Set some root variable colors for later */
 :root {
     --dark:  rgb(5, 5, 29);
     --lessdark: rgba(14, 14, 82, 0.801);
@@ -5,29 +6,33 @@
     --green:rgb(147, 218, 176);
 }
 
+/*margin 0 and border-box make everything easier to size/place. I like Trebuchet MS*/
 *{
     margin:0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*setting the background color for my page*/
 body{
     background-color: var(--dark);
 }
 
+/*sizing the header and setting its font color. flexbox to direct the elements*/
 header {
     display:inline-flex;
     flex-direction: row;   
     width:100%;
     height:75px;
-    background-color: var(--dark);
     color: var(--offwhite);
 }
 
+/*changing the font color of the a elements in header*/
 header a {
     color: var(--offwhite);
 }
 
+/*sizing the header h1 and aligning it in the center. changed padding and font-weight/size for ascetic reasons.*/
 header h1 {
     display:flex;
     width:30%;
@@ -36,6 +41,8 @@ header h1 {
     font-weight: bolder;
     padding-left: 30px;
 }
+
+/*sizing the navbar and making the list look nice. added padding to the right of the list and justified the list right. aligned center like h1*/
 header nav {
     display: flex;
     width:70%;
@@ -45,34 +52,40 @@ header nav {
     padding-right: 30px;
 }
 
+
+/*set the font size for the list items and put some padding inbetween the items*/
 header nav li {
     padding-left: 25px;
     font-size: 25px;
 }
 
-header nav li a {
+/*removing the underline from a elements*/
+a {
     text-decoration: none;
 }
 
+/*setting up my cool splashart and sizing it to my specs. aligning the p element inside to be in the bottom right corner*/
 .splashart{
     display:flex;
     background-image: url("./assets/splashart3.jpg");
     height:400px;
-    font-size: 40px;
-    color: var(--green);
     justify-content: flex-end;
     align-items: flex-end;
 }
 
+/*placing the p element where i want it and blending it in with the splash art*/
 .splashart p {
     padding: 5px;
     margin-bottom:30px;
     margin-right:30px;
     background-color: var(--dark);
-    border-radius: px;
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0);
+    color: var(--green);
+    font-size: 40px;
 }
 
+/*setting up the content blocks so that they're the right size and have the correct element flow and formatting*/
 .content{
     display: inline-flex;
     flex-direction: row;
@@ -82,35 +95,23 @@ header nav li a {
     color: var(--offwhite)
 }
 
+/*setting up the image element's size*/
 .content img {
-    display:inline-block;
     height:auto;
     width:30%;
 }
 
+/*changing the size and alignment of h2 for both content and worksection. also added a border to the right of the element*/
 .content h2, .worksection h2 {
     width:20%;
     text-align: right;
     margin-right:50px;
     font-size:35px;
-    border-right:4px solid rgb(147, 218, 176);
+    border-right:4px solid var(--green);
     color: var(--offwhite)
 }
 
-.contacts {
-    display:flex;
-    width: 70%;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.contacts a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-    color: var(--offwhite);
-}
-
+/*wrapping and sizing content's paragraph element. also setting the font size*/
 .content p{
     display: flex;
     flex-wrap: wrap;
@@ -118,9 +119,13 @@ header nav li a {
     font-size:25px;
 }
 
+
+/*setting the display to flex for our work section*/
 .worksection {
     display: flex;
 }
+
+/*setting up our grid and deciding what area it should take up on the screen*/
 .workgrid {
     width: 70%;
     display:grid;
@@ -129,24 +134,25 @@ header nav li a {
     background-color: var(--offwhite);
 }
 
+/*setting the size of our grid cells*/
 .work {
     height:300px;
-    text-decoration: none;
 }
 
-
+/*setting the size and location of the h2 tags within the work links. also sets their color to offwhite*/
 .work h2 {
     border: none;
     width: 100%;
-    text-decoration: none;
     color:var(--offwhite);
 }
 
+/*creates a highlighting effect whenever you hover over one of the work links*/
 .work:hover {
     transition: ease 500ms;
     border: 8px solid var(--lessdark)
 }
 
+/*setting the image and alignment for the first grid item*/
 .work:first-child{
     background-image: url(./assets/TTT.png);
     background-repeat: repeat;
@@ -157,6 +163,7 @@ header nav li a {
     align-items: flex-end;
 }
 
+/*setting the image and alignment for the second grid item */
 .work:nth-child(2){
     background-image: url(./assets/diceroller2.png);
     background-repeat: no-repeat;
@@ -167,16 +174,7 @@ header nav li a {
     align-items: flex-end;
 }
 
-.work:nth-child(2) h2 {
-    color:var(--dark);
-}
-
-.work:nth-child(3) h2,
-.work:nth-child(4) h2,
-.work:nth-child(5) h2{
-    color: var(--offwhite);
-}
-
+/*setting the image and alignment for the third grid item */
 .work:nth-child(3){
     background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
@@ -186,6 +184,8 @@ header nav li a {
     justify-content: right;
     align-items: flex-end;
 }
+
+/*setting the image and alignment for the fourth grid item */
 .work:nth-child(4){
     background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
@@ -195,6 +195,8 @@ header nav li a {
     justify-content: right;
     align-items: flex-end;
 }
+
+/*setting the image and alignment for the fifth grid item */
 .work:nth-child(5){
     background-image: url(./assets/underconstruction.png);
     background-repeat: no-repeat;
@@ -205,12 +207,32 @@ header nav li a {
     align-items: flex-end;
 }
 
+/*correcting the font color for the second grid's h2, since its background is white*/
+.work:nth-child(2) h2 {
+    color:var(--dark);
+}
 
-
+/*setting the grid spacing for the first grid item so that it spans two grid spaces*/
 .wide {
     grid-column: span 2;
 }
 
+/*sizing the contacts element and formatting the list's style and how its justified*/
+.contacts {
+    display:flex;
+    width: 70%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/*formatting our contacts links*/
+.contacts a {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--offwhite);
+}
+
+/*decreasing font sizes across the board as the screen gets smaller. removed the image in the aboutme section out of regard for space. also makes the splashart smaller*/
 @media screen and (max-width: 800px){
     header h1,
     .content h2,
@@ -225,9 +247,9 @@ header nav li a {
     #aboutme img{
         display:none;
     }
-    
     #aboutme p {
         width: 70%;
+        font-size: 20px;
     }
     .splashart {
         height:300px;
@@ -238,6 +260,7 @@ header nav li a {
     }
 }
 
+/*decreasing font sizes across the board as the screen gets smaller. also makes the splashart smaller*/
 @media screen and (max-width: 500px) {
     header h1,
     .content h2,
@@ -250,6 +273,7 @@ header nav li a {
     }
     #aboutme p {
         font-size: 11px;
+        font-size: 15px;
     }
     .splashart {
         height:200px;
@@ -259,6 +283,7 @@ header nav li a {
     }
 }
 
+/*decreasing font sizes across the board as the screen gets smaller. also makes the splashart smaller*/
 @media screen and (max-width: 300px) {
     header h1,
     .content h2,
