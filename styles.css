@@ -1,11 +1,13 @@
 :root {
     --dark:  rgb(5, 5, 29);
+    --lessdark: rgba(14, 14, 82, 0.801);
+    --offwhite: rgba(255, 255, 255, 0.623);
+    --green:rgb(147, 218, 176);
 }
 
 *{
     margin:0;
     box-sizing: border-box;
-    color:white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -19,6 +21,11 @@ header {
     width:100%;
     height:75px;
     background-color: var(--dark);
+    color: var(--offwhite);
+}
+
+header a {
+    color: var(--offwhite);
 }
 
 header h1 {
@@ -27,6 +34,7 @@ header h1 {
     align-items: center;
     font-size: 40px;
     font-weight: bolder;
+    padding-left: 30px;
 }
 header nav {
     display: flex;
@@ -34,6 +42,7 @@ header nav {
     list-style: none;
     justify-content: right;
     align-items: center;
+    padding-right: 30px;
 }
 
 header nav li {
@@ -47,9 +56,10 @@ header nav li a {
 
 .splashart{
     display:flex;
-    background-image: url("splashart3.jpg");
+    background-image: url("./assets/splashart3.jpg");
     height:400px;
     font-size: 40px;
+    color: var(--green);
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -59,6 +69,8 @@ header nav li a {
     margin-bottom:30px;
     margin-right:30px;
     background-color: var(--dark);
+    border-radius: px;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .content{
@@ -67,13 +79,16 @@ header nav li a {
     width:100%;
     padding-top:30px;
     padding-bottom: 30px;
+    color: var(--offwhite)
 }
 
 .content h2, .worksection h2 {
     width:20%;
     text-align: right;
-    padding-right:50px;
+    margin-right:50px;
     font-size:35px;
+    border-right:4px solid rgb(147, 218, 176);
+    color: var(--offwhite)
 }
 
 .contacts {
@@ -102,13 +117,85 @@ header nav li a {
 .workgrid {
     width: 70%;
     display:grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
 .work {
+    height:300px;
     background-color: rgba(255, 255, 255, 0.39);
+    text-decoration: none;
 }
+
+
+.work h2 {
+    border: none;
+    width: 100%;
+    text-decoration: none;
+    color:var(--offwhite)
+}
+
+.work:hover {
+    transition: ease 500ms;
+    border: 8px solid var(--lessdark)
+}
+
+.work:first-child{
+    background-image: url(./assets/TTT.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.work:nth-child(2){
+    background-image: url(./assets/diceroller2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.work:nth-child(2) h2,
+.work:nth-child(3) h2,
+.work:nth-child(4) h2,
+.work:nth-child(5) h2{
+    color: var(--dark);
+}
+
+.work:nth-child(3){
+    background-image: url(./assets/underconstruction.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+.work:nth-child(4){
+    background-image: url(./assets/underconstruction.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+.work:nth-child(5){
+    background-image: url(./assets/underconstruction.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
 
 .wide {
     grid-column: span 2;
