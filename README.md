@@ -19,7 +19,7 @@ There are no special dependencies to view this project.
 
 ### Installing
 
-Just unzip and click on index.html or open it in your browser using this link: https://github.com/scicluna/Scicluna-Professional-Portfolio
+Just unzip and click on index.html or open it in your browser using this link: https://scicluna.github.io/Scicluna-Professional-Portfolio/
 
 ### Executing program
 
