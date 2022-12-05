@@ -95,10 +95,16 @@ a {
     color: var(--offwhite)
 }
 
+.content div {
+    display: flex;
+    justify-content: right;
+    width:70%;
+}
+
 /*setting up the image element's size*/
 .content img {
     height:auto;
-    width:30%;
+    width:40%;
 }
 
 /*changing the size and alignment of h2 for both content and worksection. also added a border to the right of the element*/
@@ -115,7 +121,7 @@ a {
 .content p{
     display: flex;
     flex-wrap: wrap;
-    width:40%;
+    width:60%;
     font-size:25px;
 }
 
@@ -245,10 +251,10 @@ a {
     }
 
     #aboutme img{
-        display:none;
+        width:50%
     }
     #aboutme p {
-        width: 70%;
+        width: 100%;
         font-size: 20px;
     }
     .splashart {
@@ -257,6 +263,10 @@ a {
 
     .work {
         height: 250px;
+        }
+    .content div {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -305,3 +315,4 @@ a {
     }
 
 }
+
