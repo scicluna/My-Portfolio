@@ -182,7 +182,7 @@ a {
 
 /*setting the image and alignment for the third grid item */
 .work:nth-child(3){
-    background-image: url(./assets/underconstruction.png);
+    background-image: url(./assets/speedreader2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
