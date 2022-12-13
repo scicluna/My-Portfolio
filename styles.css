@@ -193,7 +193,7 @@ a {
 
 /*setting the image and alignment for the fourth grid item */
 .work:nth-child(4){
-    background-image: url(./assets/underconstruction.png);
+    background-image: url(./assets/guessinggame.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
