@@ -136,13 +136,14 @@ a {
     width: 70%;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2px;
     background-color: var(--offwhite);
 }
 
 /*setting the size of our grid cells*/
 .work {
-    height:300px;
+    height:500px;
 }
 
 /*setting the size and location of the h2 tags within the work links. also sets their color to offwhite*/
@@ -160,7 +161,7 @@ a {
 
 /*setting the image and alignment for the first grid item*/
 .work:first-child{
-    background-image: url(./assets/TTT.png);
+    background-image: url(./assets/C4.png);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -171,7 +172,7 @@ a {
 
 /*setting the image and alignment for the second grid item */
 .work:nth-child(2){
-    background-image: url(./assets/diceroller2.png);
+    background-image: url(./assets/guessinggame.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -182,7 +183,7 @@ a {
 
 /*setting the image and alignment for the third grid item */
 .work:nth-child(3){
-    background-image: url(./assets/speedreader2.png);
+    background-image: url(./assets/diceroller2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -193,7 +194,7 @@ a {
 
 /*setting the image and alignment for the fourth grid item */
 .work:nth-child(4){
-    background-image: url(./assets/guessinggame.png);
+    background-image: url(./assets/TTT.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -204,7 +205,7 @@ a {
 
 /*setting the image and alignment for the fifth grid item */
 .work:nth-child(5){
-    background-image: url(./assets/underconstruction.png);
+    background-image: url(./assets/speedreader2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -213,8 +214,8 @@ a {
     align-items: flex-end;
 }
 
-/*correcting the font color for the second grid's h2, since its background is white*/
-.work:nth-child(2) h2 {
+/*correcting the font color for the third grid's h2, since its background is white*/
+.work:nth-child(3) h2 {
     color:var(--dark);
 }
 
