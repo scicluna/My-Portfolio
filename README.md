@@ -1,4 +1,4 @@
-# Horiseon
+# My Portfolio
 
 The purpose of this project is to take all of the CSS and HTML knowledge that we have accumulated in the first month of bootcamp and put it to the test. This also gives us a great start in building our professional portfolio.
 
