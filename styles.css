@@ -161,7 +161,7 @@ a {
 
 /*setting the image and alignment for the first grid item*/
 .work:first-child{
-    background-image: url(./assets/C4.png);
+    background-image: url(./assets/moviemash.png);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -194,7 +194,7 @@ a {
 
 /*setting the image and alignment for the fourth grid item */
 .work:nth-child(4){
-    background-image: url(./assets/TTT.png);
+    background-image: url(./assets/C4.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -205,7 +205,7 @@ a {
 
 /*setting the image and alignment for the fifth grid item */
 .work:nth-child(5){
-    background-image: url(./assets/speedreader2.png);
+    background-image: url(./assets/weatherapp.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
